@@ -109,7 +109,8 @@
             <div class="card-body">
               <h5 class="card-title">Wolfer</h5>
               <p class="card-text">I only walk with wolfs</p>
-              <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#successModal">Seguir</a>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#successModal">Seguir</a>
+              <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#reportModal">Denunciar</a>
             </div>
           </section>
           <!-- Sugestões de Seguir -->
@@ -126,6 +127,7 @@
                   Lonely Wolf
                   <div>
                     <a href="#" class="btn btn-primary btn-sm mt-1" data-toggle="modal" data-target="#successModal">Seguir</a>
+                    <a href="#" class="btn btn-danger btn-sm mt-1" data-toggle="modal" data-target="#reportModal">Denunciar</a>
                   </div>
                 </li>
                 <li class="list-group-item">
@@ -137,6 +139,7 @@
                   Very Bad Wolf
                   <div>
                     <a href="#" class="btn btn-primary btn-sm mt-1" data-toggle="modal" data-target="#successModal">Seguir</a>
+                    <a href="#" class="btn btn-danger btn-sm mt-1" data-toggle="modal" data-target="#reportModal">Denunciar</a>
                   </div>
                 </li>
                 <!-- Adicione mais sugestões aqui -->
@@ -162,6 +165,26 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de denúncia -->
+    <div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="reportModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="reportModalLabel">Denúncia realizada</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Recebemos sua denúncia. Nossa equipe analisará o perfil indicado e entrará em contato contigo em um futuro próximo com maiores atualizações sobre sua solicitação.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
           </div>
         </div>
       </div>
