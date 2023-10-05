@@ -85,7 +85,7 @@
             <div class="card-body">
               <h5 class="card-title">Wolfer</h5>
               <p class="card-text">I only walk with wolfs</p>
-              <a href="#" class="btn btn-primary btn-block">Seguir</a>
+              <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#successModal">Seguir</a>
             </div>
           </section>
           <!-- Sugestões de Seguir -->
@@ -101,7 +101,7 @@
                   />
                   Lonely Wolf
                   <div>
-                    <a href="#" class="btn btn-primary btn-sm mt-1">Seguir</a>
+                    <a href="#" class="btn btn-primary btn-sm mt-1" data-toggle="modal" data-target="#successModal">Seguir</a>
                   </div>
                 </li>
                 <li class="list-group-item">
@@ -112,7 +112,7 @@
                   />
                   Very Bad Wolf
                   <div>
-                    <a href="#" class="btn btn-primary btn-sm mt-1">Seguir</a>
+                    <a href="#" class="btn btn-primary btn-sm mt-1" data-toggle="modal" data-target="#successModal">Seguir</a>
                   </div>
                 </li>
                 <!-- Adicione mais sugestões aqui -->
@@ -122,6 +122,26 @@
         </section>
       </div>
     </main>
+    
+    <!-- Modal com mensagem de sucesso ao clicar nos botões "Seguir" -->
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="successModalLabel">Sucesso</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Inscrição realizada com sucesso!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Inclua os arquivos JavaScript do Bootstrap (opcional) -->
     <script
